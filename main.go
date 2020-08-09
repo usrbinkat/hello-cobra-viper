@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/usrbinkat/go-hello-viper/cmd"
+import "github.com/usrbinkat/hello-cobra-viper/cmd"
 
 func main() {
   cmd.Execute()
