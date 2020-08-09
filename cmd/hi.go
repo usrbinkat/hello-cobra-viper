@@ -18,8 +18,6 @@ var (
     greeting string
 )
 
-
-
 func init() {
     rootCmd.AddCommand(hiCmd)
     hiCmd.PersistentFlags().StringVarP(&greeting, "greeting", "g", "How are you?", "Greeting statement")
