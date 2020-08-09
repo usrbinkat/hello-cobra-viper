@@ -1,0 +1,16 @@
+friends:
+  family:
+    dad: bob
+    son: stan
+    sibblings:
+      - ray
+      - bill
+      - bud
+  neighbors:
+    - gates:
+      dog: roger
+      bird: pepe
+    - gates:
+      cat: karen
+      lizard: bigben
+
