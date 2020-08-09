@@ -14,9 +14,13 @@ var hiCmd = &cobra.Command{
 	},
 }
 
+var (
+	greeting string
+)
+
 func init() {
 	rootCmd.AddCommand(hiCmd)
-	hiCmd.PersistentFlags().StringP("greeting", "g", "How are you?", "Greeting statement")
+	hiCmd.PersistentFlags().StringP(&greeting "greeting", "g", "How are you?", "Greeting statement")
 }
 
 func CoreHello() {
