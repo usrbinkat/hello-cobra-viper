@@ -27,7 +27,7 @@ func Execute() {
 
 func init() {
   cobra.OnInitialize(initConfig)
-  rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "c", "config file (default: $PWD/hello.yaml)")
+  rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "config file (default: $PWD/hello.yaml)")
 }
 
 
@@ -56,4 +56,3 @@ func initConfig() {
     fmt.Println("Using config file:", viper.ConfigFileUsed())
   }
 }
-
